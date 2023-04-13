@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 1024px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: cadetblue;
+  color: red;
+  margin-left: 6rem;
+}
+
+main {
+  width: 90%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 25% auto auto auto;
+  grid-template-rows: 7rem 8rem 26rem 40%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: red;
+  line-height: 0.8;
+  margin: 1rem 0 1rem;
+  padding-top: 4rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+section {
+  background-color: rgba(174, 217, 239, 0.3);
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section img {
+  width: 360px;
+  max-height: 26rem;
+  border: 5px solid transparent;
+}
+
+section img:hover {
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+section.no-voting img:hover {
+  border: 5px solid transparent;
+  cursor: none;
+}
+
+ul {
+  margin: 1rem;
+}
+
+li {
+  margin: 0.5rem;
+}
+
+section + div {
+  background-color: darkgrey;
+  color: red;
+  padding: 0.5rem 1rem;
+  width: max-content;
+  height: max-content;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
+.chart-container {
+  padding-top: 5rem;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
